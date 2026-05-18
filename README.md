@@ -59,13 +59,7 @@ cd edge-tts-server
 vercel deploy --prod
 ```
 
-在 Vercel 控制台至少设置：
-
-- `API_KEY`：生产密钥 (自己随意设置)
-- `ENABLE_DOCS`：`false`（或不设置）
-- `MAX_TEXT_LENGTH`：按需
-
-`PORT` 由平台注入，无需配置。
+环境变量可以在 vercel 控制台设置。`PORT` 由平台注入，无需配置。
 
 官方文档：[Deploy a FastAPI app on Vercel](https://vercel.com/docs/frameworks/backend/fastapi)
 
@@ -149,4 +143,4 @@ vercel deploy --prod
 ## 常见问题
 
 **Q：和 Azure Speech API 有什么区别？**  
-本服务通过 edge-tts 调用 Edge 同款在线能力，无需微软 API Key，但属于非官方接口。
+本服务通过 edge-tts 调用 Edge 同款在线能力，无需微软 API Key，但属于非官方接口。不要商用哦。
