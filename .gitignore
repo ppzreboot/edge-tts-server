@@ -4,3 +4,4 @@ __pycache__/
 venv/
 .env
 *.mp3
+.vercel
